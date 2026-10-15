@@ -34,7 +34,7 @@
   <script type="importmap">
     {
       "imports": {
-        "wasi_snapshot_preview1": "./wasi_snapshot_preview1.js"
+        "wasi_snapshot_preview1": "./runtime/generated/wasi_snapshot_preview1.js"
       }
     }
   </script>
@@ -293,9 +293,9 @@
   </script>
 </head>
 <body>
-  <script src="msgpack.min.js"></script>
+  <script src="runtime/vendor/msgpack.min.js"></script>
   <script>
-    globalThis.__operitRuntimeReady = import("./operit_runtime_bridge.js");
+    globalThis.__operitRuntimeReady = import("./runtime/generated/operit_runtime_bridge.js");
   </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
