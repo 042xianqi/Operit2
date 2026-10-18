@@ -68,11 +68,17 @@ export class OperitFlutterBridgeWasm {
     watchStream(request: Uint8Array, onEvent: Function): Promise<Uint8Array>;
 }
 
+/**
+ * Exposes the independent browser storage engine without creating a Core tree.
+ */
+export function operitDataRescue(request: string): string;
+
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
     readonly memory: WebAssembly.Memory;
     readonly __wbg_operitflutterbridgewasm_free: (a: number, b: number) => void;
+    readonly operitDataRescue: (a: number, b: number) => [number, number];
     readonly operit_flutter_bridge_close_watch_stream: (a: number, b: number, c: number) => void;
     readonly operit_flutter_bridge_create: () => number;
     readonly operit_flutter_bridge_create_error: () => number;
@@ -106,12 +112,12 @@ export interface InitOutput {
     readonly wasm_bindgen__convert__closures_____invoke__h021146d1cbd71021: (a: number, b: number, c: any) => [number, number];
     readonly wasm_bindgen__convert__closures_____invoke__h1b68b2cd68b124c7: (a: number, b: number, c: any, d: any) => void;
     readonly wasm_bindgen__convert__closures_____invoke__h89423c77def265a5: (a: number, b: number, c: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a: (a: number, b: number, c: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_3: (a: number, b: number, c: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_4: (a: number, b: number, c: any) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_5: (a: number, b: number, c: any) => void;
+    readonly wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932: (a: number, b: number, c: any) => void;
+    readonly wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_3: (a: number, b: number, c: any) => void;
+    readonly wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_4: (a: number, b: number, c: any) => void;
+    readonly wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_5: (a: number, b: number, c: any) => void;
     readonly wasm_bindgen__convert__closures_____invoke__hee6dad55d3ace0cc: (a: number, b: number) => void;
-    readonly wasm_bindgen__convert__closures_____invoke__h6069eea7e11c37d3: (a: number, b: number) => void;
+    readonly wasm_bindgen__convert__closures_____invoke__hb5db94b985f050fb: (a: number, b: number) => void;
     readonly __wbindgen_malloc_command_export: (a: number, b: number) => number;
     readonly __wbindgen_realloc_command_export: (a: number, b: number, c: number, d: number) => number;
     readonly __wbindgen_exn_store_command_export: (a: number) => void;

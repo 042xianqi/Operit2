@@ -26052,7 +26052,7 @@ _.d=d},
 aQX(){var s,r,q=null,p=A.mb(v.G.window.location.href),o=p.gB3().h(0,"studioOrigin"),n=p.gB3().h(0,"nonce"),m=p.gB3().h(0,"rendererReleaseId"),l=o==null
 if(l&&n==null&&m==null)return q
 s=!0
-if(!l)if(n!=null)l=m!=="ci-c28151ca1675"
+if(!l)if(n!=null)l=m!=="ci-7f4f4dd7f40a"
 else l=s
 else l=s
 if(l)throw A.f(A.bV("Studio parameters must match the compiled renderer release",q))
@@ -26060,9 +26060,9 @@ r=A.mb(o)
 if(r.gm0()!=="https"&&r.gm0()!=="http"||r.gAd().length===0||r.gvi()!==o)A.a4(A.bV("Studio must use an exact HTTP(S) origin",q))
 l=A.co("^[A-Za-z0-9_-]{16,128}$",!0,!1)
 if(l.b.test(n)){l=A.co("^[A-Za-z0-9._-]{1,128}$",!0,!1)
-l=!l.b.test("ci-c28151ca1675")}else l=!0
+l=!l.b.test("ci-7f4f4dd7f40a")}else l=!0
 if(l)A.a4(A.bV("A nonce and pinned renderer release ID are required",q))
-return new A.aj4(o,n,"ci-c28151ca1675")},
+return new A.aj4(o,n,"ci-7f4f4dd7f40a")},
 aFY(a){var s=a==null?null:A.a0w(a)
 if(!t.f.b(s))return null
 return A.a8C(s,t.N,t.z)},

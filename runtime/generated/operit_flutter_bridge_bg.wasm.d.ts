@@ -2,6 +2,7 @@
 /* eslint-disable */
 export const memory: WebAssembly.Memory;
 export const __wbg_operitflutterbridgewasm_free: (a: number, b: number) => void;
+export const operitDataRescue: (a: number, b: number) => [number, number];
 export const operit_flutter_bridge_close_watch_stream: (a: number, b: number, c: number) => void;
 export const operit_flutter_bridge_create: () => number;
 export const operit_flutter_bridge_create_error: () => number;
@@ -35,12 +36,12 @@ export const ring_core_0_17_14__bn_mul_mont: (a: number, b: number, c: number, d
 export const wasm_bindgen__convert__closures_____invoke__h021146d1cbd71021: (a: number, b: number, c: any) => [number, number];
 export const wasm_bindgen__convert__closures_____invoke__h1b68b2cd68b124c7: (a: number, b: number, c: any, d: any) => void;
 export const wasm_bindgen__convert__closures_____invoke__h89423c77def265a5: (a: number, b: number, c: any) => void;
-export const wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a: (a: number, b: number, c: any) => void;
-export const wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_3: (a: number, b: number, c: any) => void;
-export const wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_4: (a: number, b: number, c: any) => void;
-export const wasm_bindgen__convert__closures_____invoke__h101fdeb108ccb49a_5: (a: number, b: number, c: any) => void;
+export const wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932: (a: number, b: number, c: any) => void;
+export const wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_3: (a: number, b: number, c: any) => void;
+export const wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_4: (a: number, b: number, c: any) => void;
+export const wasm_bindgen__convert__closures_____invoke__h5b400c2e536ab932_5: (a: number, b: number, c: any) => void;
 export const wasm_bindgen__convert__closures_____invoke__hee6dad55d3ace0cc: (a: number, b: number) => void;
-export const wasm_bindgen__convert__closures_____invoke__h6069eea7e11c37d3: (a: number, b: number) => void;
+export const wasm_bindgen__convert__closures_____invoke__hb5db94b985f050fb: (a: number, b: number) => void;
 export const __wbindgen_malloc_command_export: (a: number, b: number) => number;
 export const __wbindgen_realloc_command_export: (a: number, b: number, c: number, d: number) => number;
 export const __wbindgen_exn_store_command_export: (a: number) => void;
